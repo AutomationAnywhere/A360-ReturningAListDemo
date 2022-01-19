@@ -1,0 +1,48 @@
+{
+    "name": "ReturningAListDemo",
+    "label": "Returning A List",
+    "description": "Sample Code for Returning a List",
+    "group": "com.automationanywhere",
+    "artifactName": "ReturningAListDemo",
+    "packageVersion": "2.3.0-20220119-124516",
+    "codeVersion": "2.3.0-20220119-124516",
+    "author": "",
+    "commands": [
+        {
+            "name": "returnalist",
+            "label": "Return a List",
+            "description": "Returns a list of the provided strings",
+            "nodeLabel": "Return a List",
+            "minimumControlRoomVersion": "8750",
+            "minimumBotAgentVersion": "20.11",
+            "mainClass": "com.automationanywhere.botcommand.ReturnAListCommand",
+            "icon": "pkg.svg",
+            "returnType": "LIST",
+            "returnSubtype": "UNDEFINED",
+            "returnLabel": "New list of Strings",
+            "returnRequired": true,
+            "attributes": [
+                {
+                    "name": "firstString",
+                    "label": "Field 1 for List",
+                    "type": "TEXT",
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                },
+                {
+                    "name": "secondString",
+                    "label": "Field 2 for List",
+                    "type": "TEXT",
+                    "rules": [
+                        {
+                            "name": "NOT_EMPTY"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
